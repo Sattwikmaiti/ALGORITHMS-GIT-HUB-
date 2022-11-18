@@ -10,6 +10,8 @@
     {
         // Code here
         // infinity distance 
+	    // if any node weight is -ve then it goes for infinite distance ....since ..the distance value always decreases  ////
+	    //so dijsktra algo fails for negative edge weight
           vector<int> dis(n,1e9);
           //min heap 
          priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>>pq; 
