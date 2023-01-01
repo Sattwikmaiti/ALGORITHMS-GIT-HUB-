@@ -22,6 +22,7 @@ while(m<=h)
             m++;
           }
           else{
+            // reason we know that before m we are sorted ..but have no idea after m  example : 1 2 0 if we do m++ in this block we will understand the problem 
             swap(a[m],a[h]);
             h--;
 
