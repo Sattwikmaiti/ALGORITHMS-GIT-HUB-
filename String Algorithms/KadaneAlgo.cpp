@@ -7,9 +7,11 @@ using namespace std;
      { int x=nums[i];
          s+=x;
          maxi=max(maxi,s);
+         // if sum is negative then , set s=0 . as that will lower our further sum
          if(s<0)
            s=0;
      }
+     // so sum=0 can also be a answer 
 return maxi;
     }
 int main()
